@@ -13,5 +13,19 @@ namespace Formularz
         {
 
         }
+
+        protected void ButtonWyślij_Click(object sender, EventArgs e)
+        {
+            var Imie = TextBoxImie.Text;
+            var Nazwisko = TextBoxNazwisko.Text;
+            var Wojewodztwo = DropDownListWojewodztwo.SelectedValue;
+            var Miasto = TextBoxMiasto.Text;
+            var Ulica = TextBoxUlica.Text;
+            var Email = TextBoxEmail.Text;
+            var Uwagi = TextBoxUwagi.Text;
+
+            LabelWynik.Text = Imie + " " + Nazwisko + " " + Wojewodztwo + " " 
+                + Miasto + " " + Ulica + " " + Email + " " + Uwagi;
+        }
     }
 }
