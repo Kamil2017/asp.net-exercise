@@ -26,12 +26,14 @@
                 <td class="auto-style2">Imie</td>
                 <td>
                     <asp:TextBox ID="TextBoxImie" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxImie" ErrorMessage="Podaj imie !"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">Nazwisko</td>
                 <td>
                     <asp:TextBox ID="TextBoxNazwisko" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxNazwisko" ErrorMessage="Podaj nazwisko!"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -53,18 +55,21 @@
                 <td class="auto-style2">Miasto</td>
                 <td>
                     <asp:TextBox ID="TextBoxMiasto" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="ldValidator4" runat="server" ControlToValidate="TextBoxMiasto" ErrorMessage="Podaj miasto!"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">Ulica</td>
                 <td>
                     <asp:TextBox ID="TextBoxUlica" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBoxUlica" ErrorMessage="Podaj ulice!"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">E-mail</td>
                 <td>
                     <asp:TextBox ID="TextBoxEmail" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Podaj email!"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
