@@ -27,6 +27,7 @@
                 <td>
                     <asp:TextBox ID="TextBoxImie" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBoxImie" ErrorMessage="Podaj imie !" ForeColor="Red">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxImie" ErrorMessage="Podaj prawidłowe imie!" ValidationExpression="^[a-zA-Z]{1,}$"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -34,6 +35,7 @@
                 <td>
                     <asp:TextBox ID="TextBoxNazwisko" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBoxNazwisko" ErrorMessage="Podaj nazwisko!" ForeColor="Red">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBoxNazwisko" ErrorMessage="Podaj prawidłowe nazwisko!" ValidationExpression="^[a-zA-Z]{1,}$"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -56,6 +58,7 @@
                 <td>
                     <asp:TextBox ID="TextBoxMiasto" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="ldValidator4" runat="server" ControlToValidate="TextBoxMiasto" ErrorMessage="Podaj miasto!" ForeColor="Red">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TextBoxMiasto" ErrorMessage="Podaj prawidłowe miasto!" ValidationExpression="^[a-zA-Z]{1,}$"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -63,6 +66,7 @@
                 <td>
                     <asp:TextBox ID="TextBoxUlica" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBoxUlica" ErrorMessage="Podaj ulice!" ForeColor="Red">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="TextBoxUlica" ErrorMessage="Podaj prawidłową ulice!" ValidationExpression="^[a-zA-Z]{1,}$"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -70,12 +74,14 @@
                 <td>
                     <asp:TextBox ID="TextBoxEmail" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Podaj email!" ForeColor="Red">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="Podaj prawidłowy email!" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Uwagi</td>
+                <td class="auto-style2">Kod pocztowy</td>
                 <td>
                     <asp:TextBox ID="TextBoxUwagi" runat="server"></asp:TextBox>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="TextBoxUwagi" ErrorMessage="Podaj prawidłowy kod pocztowy w formacie xx-xxx!" ValidationExpression="^[0-9]{2}-[0-9]{3}"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
