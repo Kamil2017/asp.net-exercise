@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp.net-exercise", "asp.net
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formularz", "Formularz\Formularz.csproj", "{57DBF6E0-8D5D-40AA-9527-9DBDA5B5B4BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kontrolki", "Kontrolki\Kontrolki.csproj", "{62408EBF-B9A1-4ED2-9E9C-FBFD8923765F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{57DBF6E0-8D5D-40AA-9527-9DBDA5B5B4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57DBF6E0-8D5D-40AA-9527-9DBDA5B5B4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57DBF6E0-8D5D-40AA-9527-9DBDA5B5B4BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62408EBF-B9A1-4ED2-9E9C-FBFD8923765F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62408EBF-B9A1-4ED2-9E9C-FBFD8923765F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62408EBF-B9A1-4ED2-9E9C-FBFD8923765F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62408EBF-B9A1-4ED2-9E9C-FBFD8923765F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
